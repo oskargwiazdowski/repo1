@@ -3,7 +3,7 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 750 750" enable-background="new 0 0 750 750" xml:space="preserve">
 
-<g id="_x2014_ŽÓť_x5F_1">
+<g id="mydesk" class="myeffect3">
 	<g>
 		<rect x="0" display="none" fill="#FFFFFF" width="750" height="750"/>
 		<path display="none" opacity="5.000000e-02" fill="#9FC3C4" d="M628,576H122c-27.6,0-50-22.4-50-50V182c0-27.6,22.4-50,50-50h506
@@ -153,15 +153,16 @@
 		</g>
 
 	</g>
-</g>
-<g id="eye_x5F_left" class="eye_left">
+	<g id="eye_x5F_left" class="eye_left">
 
-		<ellipse id="eye_x5F_left1" transform="matrix(-0.9985 -5.390551e-02 5.390551e-02 -0.9985 668.012 694.6981)" fill="#603141" cx="343.4" cy="338.3" rx="4.3" ry="5.8"/>
-</g>
-<g id="eye_x5F_right" class="eye_right">
+			<ellipse id="eye_x5F_left1" transform="matrix(-0.9985 -5.390551e-02 5.390551e-02 -0.9985 668.012 694.6981)" fill="#603141" cx="343.4" cy="338.3" rx="4.3" ry="5.8"/>
+	</g>
+	<g id="eye_x5F_right" class="eye_right">
 
-		<ellipse id="eye_x5F_right1" transform="matrix(-0.9985 -5.390551e-02 5.390551e-02 -0.9985 793.8952 697.3392)" fill="#603141" cx="406.4" cy="338" rx="4.3" ry="5.8"/>
+			<ellipse id="eye_x5F_right1" transform="matrix(-0.9985 -5.390551e-02 5.390551e-02 -0.9985 793.8952 697.3392)" fill="#603141" cx="406.4" cy="338" rx="4.3" ry="5.8"/>
+	</g>
 </g>
+
 
 
 
@@ -185,6 +186,41 @@
 				 opacity: 1;
 		 }
 	 }
+
+	 	 .myeffect3 {
+	 	 -webkit-animation-timing-function : cubic-bezier(0.2,1,0.2,1);
+	 	         animation-timing-function : cubic-bezier(0.2,1,0.2,1);
+	 	 opacity : 0;
+	 	 will-change : transform, opacity;
+	 	 -webkit-transform : perspective(800px) rotateX(-60deg) translateY(50px);
+	 	         transform : perspective(800px) rotateX(-60deg) translateY(50px);
+	 	 -webkit-animation-duration : 1.50s;
+	 	         animation-duration : 1.50s;
+	 	 -webkit-animation-name : fade-content;
+	 	         animation-name : fade-content;
+	 	 -webkit-animation-fill-mode : forwards;
+	 	         animation-fill-mode : forwards;
+	 	 }
+
+	 	 .myeffect3 {
+	 	 -webkit-animation-delay : 0.8s;
+	 	         animation-delay : 0.8s;
+	 	 }
+	 	 @-webkit-keyframes fade-content {
+	 	 to {
+	 	 opacity : 1;
+	 	 -webkit-transform : none;
+	 	         transform : none;
+	 	 }
+	 	 }
+	 	 @keyframes fade-content {
+	 	 to {
+	 	 opacity : 1;
+	 	 -webkit-transform : none;
+	 	         transform : none;
+	 	 }
+	 	 }
+
  </style>
 
 
