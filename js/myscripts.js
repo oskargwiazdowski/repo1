@@ -1,8 +1,21 @@
+( function() {
+	var button = document.querySelector( '.menu-icon' );
 
-function menudrop() {
-  document.getElementsByClassName("mymenu")[0].classList.toggle("show");
-  return false;
-}
+	button.addEventListener( 'click', function( evt ) {
+		var menu = document.querySelector( '.nav-menu-closed' );
+
+		menu.classList.toggle( 'nav-menu-open' );
+		button.setAttribute( 'aria-expanded', String( menu.classList.contains( 'nav-menu-open' ) ) );
+	}, false );
+}() );
+
+
+$(".smooth-scroll").click(function() {
+	var href = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(href).offset().top
+        }, 800);
+    });
 
 
 $('.owl-carousel').owlCarousel({
